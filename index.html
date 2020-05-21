@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="./bower_components/jquery/dist/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./bower_components/leaflet/dist/leaflet.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="./bower_components/leaflet/dist/leaflet.css" type="text/css" media="all" />
+    <script src="main.js" type="text/javascript" charset="utf-8"></script>
+    <style type="text/css" media="screen">
+    #map{
+      width: 500px;
+      height: 500px;
+    }
+    </style>
+  </head>
+  <body>
+  <div id="map">
+  </div>
+
+  <div class="coordinates">
+    <p> East </P>
+    <input id='first-east' />
+  </div>
+  <div class="coordinates">
+    <p> West </P>
+    <input id='first-west' />
+  </div>
+  <label for="first-distance">first-distance</label>
+  <input type="text" name="first-distance" id="first-distance" value="" />
+
+  <div class="coordinates">
+    <p> East </P>
+    <input id='second-east' />
+  </div>
+  <div class="coordinates">
+    <p> West </P>
+    <input id='second-west' />
+  </div>
+  <label for="second-distance">second-distance</label>
+  <input type="text" name="second-distance" id="second-distance" value="" />
+
+  <input type=submit id='draw'>
+
+  </body>
+</html>
